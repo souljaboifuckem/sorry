@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Favorite Person</title>
+    <link rel="preconnect" href="https://open.spotify.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-label="A comforting message">
+        <div class="hero__sky" aria-hidden="true">
+          <span class="star star--one"></span>
+          <span class="star star--two"></span>
+          <span class="star star--three"></span>
+          <span class="moon"></span>
+          <span class="float-heart float-heart--one">&hearts;</span>
+          <span class="float-heart float-heart--two">&hearts;</span>
+          <span class="float-heart float-heart--three">&hearts;</span>
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow">a tiny place to breathe</p>
+          <h1>For the love of my life</h1>
+          <p class="hero__copy">
+            I know today might feel heavy, but you do not have to carry it by
+            yourself. Stay here for a minute. Let the page be soft. Let me love
+            you in the small ways too.
+          </p>
+        </div>
+      </section>
+
+      <section class="love-note" aria-label="Love note">
+        <div>
+          <p class="section-label">read this slowly</p>
+          <h2>You are not too much.</h2>
+        </div>
+        <p>
+          You are my favorite hello, my safest thought, and the person I would
+          choose in every version of the day. Even when your mind is loud, even
+          when you feel far away from yourself, I am still right here.
+        </p>
+      </section>
+
+      <section class="quote-grid" aria-label="Comfort quotes">
+        <article class="quote-card quote-card--wide">
+          <p>"We accept the love we think we deserve."</p>
+          <span>The Perks of Being a Wallflower</span>
+        </article>
+        <article class="quote-card">
+          <p>Be gentle with the version of you that survived today.</p>
+          <span>for you, from me</span>
+        </article>
+        <article class="quote-card">
+          <p>There is still softness waiting for you tomorrow.</p>
+          <span>also from me</span>
+        </article>
+      </section>
+
+      <section id="song" class="song-section" aria-label="Song player">
+        <div class="song-copy">
+          <p class="section-label">our soundtrack</p>
+          <h2>My Girlfriend</h2>
+          <p>
+            Put this on and let the world get a little quieter. No fixing,
+            no rushing, just us and a song for the low moments.
+          </p>
+        </div>
+        <iframe
+          class="spotify"
+          title="My Girlfriend by TV Girl on Spotify"
+          src="https://open.spotify.com/embed/track/36RNOJkIDAoyfEOHdLhmD3?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section id="game" class="game-section" aria-label="Heart catching game">
+        <div class="game-header">
+          <div>
+            <p class="section-label">mini game</p>
+            <h2>Catch the hearts</h2>
+          </div>
+          <div class="score-pill" aria-live="polite">
+            <span id="score">0</span>
+            <small>hearts</small>
+          </div>
+        </div>
+
+        <div class="game-shell">
+          <canvas id="heartGame" width="900" height="520"></canvas>
+          <div id="gameOverlay" class="game-overlay">
+            <p>Move with arrow keys, A/D, or drag on your phone.</p>
+            <button id="startGame" class="button button--primary">Start catching</button>
+          </div>
+          <div id="lovePopup" class="love-popup" role="status" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="promise" aria-label="Small promise">
+        <h2>One tiny promise</h2>
+        <p>
+          If tonight gets too heavy or unsafe, tell me, someone you trust, or
+          call/text 988 if you are in the U.S. Your life matters more than the
+          bad feeling of this moment.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
